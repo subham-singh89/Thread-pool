@@ -1,27 +1,20 @@
-# ThreadPool Example
+ThreadPool Example
 
-This project demonstrates a simple thread pool implementation in C++ using `std::thread`, `std::mutex`, `std::condition_variable`, and `std::future`.
+This project demonstrates a simple implementation of a thread pool in C++. A thread pool manages a fixed number of threads and distributes tasks to them asynchronously, providing efficient task execution in concurrent environments.
+Usage
 
-## Features
-
-- **ThreadPool**: Manages a fixed number of threads and distributes tasks asynchronously.
-- **Task Enqueueing**: Supports enqueueing tasks with arguments and returning results using `std::future`.
-- **Thread Safety**: Ensures thread safety using mutexes and condition variables.
-- **Shutdown Mechanism**: Gracefully shuts down the thread pool when tasks are completed.
-
-## Usage
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/ThreadPoolExample.git
-   cd ThreadPoolExample
-
-    Build the Project:
-
-    Ensure you have CMake installed. Then, build the project:
+    Clone the Repository:
 
     bash
+
+git clone https://github.com/YOUR_USERNAME/ThreadPoolExample.git
+cd ThreadPoolExample
+
+Build the Project:
+
+Ensure you have CMake installed. Build the project using the following commands:
+
+bash
 
 cmake .
 make
@@ -34,9 +27,7 @@ bash
 
     ./ThreadPoolExample
 
-    Customization:
-
-    Modify main.cpp to change the number of threads in the pool or the tasks being executed.
+    This will run the example application, which demonstrates how tasks are processed concurrently by the thread pool.
 
 Requirements
 
@@ -46,3 +37,6 @@ Requirements
 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
