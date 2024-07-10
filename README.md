@@ -1,13 +1,24 @@
 # Thread Pool
 
-This is a implementation of the object pool design pattern to help us manage the thread for number of resources
+This project implements a thread pool using the object pool design pattern to efficiently manage resources for concurrent task execution.
 
-'''bash
-//To run the program clone the repo and then in the repo
+## Usage
+
+To run the program, follow these steps:
+
+```bash
+# Clone the repository
+cd Thread-Pool
+
+# Create a build directory
 mkdir build
 cd build
-cmake ..
-make
-./ThreadPool
-'''
 
+# Generate build files using CMake
+cmake ..
+
+# Compile the project
+make
+
+# Run the ThreadPool example
+./ThreadPool
